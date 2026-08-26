@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 48px 20px;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    color: #172554;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+body > h2,
+body > label,
+body > input,
+body > select,
+body > button,
+body > #expenseList,
+body > h3 {
+    display: block;
+    width: min(100%, 620px);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 28px;
+    color: #1d4ed8;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+label {
+    margin-bottom: 4px;
+    color: #1e3a8a;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+input,
+select,
+button {
+    border: 1px solid #93c5fd;
+    border-radius: 6px;
+    font: inherit;
+}
+
+input,
+select {
+    margin-bottom: 12px;
+    padding: 13px 14px;
+    background: #ffffff;
+    color: #172554;
+}
+
+input:focus,
+select:focus {
+    outline: 3px solid #bfdbfe;
+    border-color: #2563eb;
+}
+
+button {
+    margin-top: 4px;
+    padding: 13px 18px;
+    background: #2563eb;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#expenseList {
+    margin-top: 28px;
+}
+
+#expenseList > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 12px;
+    padding: 14px 16px;
+    border-left: 5px solid #2563eb;
+    border-radius: 6px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.12);
+}
+
+#expenseList p {
+    margin: 0;
+    color: #1e3a8a;
+}
+
+#expenseList button {
+    width: auto;
+    margin: 0;
+    padding: 8px 12px;
+    background: #1e40af;
+    font-size: 0.9rem;
+}
+
+h3 {
+    margin-top: 28px;
+    padding: 18px;
+    border-top: 2px solid #60a5fa;
+    color: #1e3a8a;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 32px 16px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+#shopping-cart-page {
+    display: block;
+}
+
+#shopping-cart-page > h2 {
+    margin-top: 28px;
+}
+
+#productList,
+#cartList {
+    width: min(100%, 620px);
+    margin: 0 auto;
+}
+
+#productList > div,
+#cartList > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 12px;
+    padding: 14px 16px;
+    border-left: 5px solid #2563eb;
+    border-radius: 6px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.12);
+}
+
+#productList h3,
+#productList p,
+#cartList p {
+    margin: 0;
+    color: #1e3a8a;
+}
+
+#productList p {
+    margin-top: 4px;
+    color: #2563eb;
+}
+
+#productList button,
+#cartList button {
+    width: auto;
+    margin: 0;
+    padding: 8px 12px;
+    background: #1e40af;
+    font-size: 0.9rem;
+}
+
+#productList button:hover,
+#cartList button:hover {
+    background: #1d4ed8;
+}
