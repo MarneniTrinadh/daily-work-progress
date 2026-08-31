@@ -1,0 +1,65 @@
+body {
+  background-color: #F0F8FF;
+  font-size: 16px;
+  margin: 0;
+  padding: 20px;
+}
+
+p {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.container {
+  width: 80%;
+  min-height: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+h1 {
+  color: blue;
+  font-size: 32px;
+}
+
+p {
+  color: #333;
+  font-size: 18px;
+}
+
+.skills {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.skills li {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  list-style: none;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.signup-form {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+}
