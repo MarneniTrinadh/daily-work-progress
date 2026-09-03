@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/layout.css">
+  <link rel="stylesheet" href="/styles/content.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title><%= locals.pageTitle || "Trinadh Marneni | Portfolio" %></title>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Primary navigation">
+      <a class="brand" href="/portfolio" aria-label="Trinadh Marneni home">
+        <span class="brand-mark">TM</span>
+        <span>Trinadh Marneni</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <div class="nav-links" id="site-navigation">
+        <a class="<%= locals.currentPage === 'portfolio' ? 'active' : '' %>" href="/portfolio">Home</a>
+        <a class="<%= locals.currentPage === 'about' ? 'active' : '' %>" href="/about">About</a>
+        <a class="<%= locals.currentPage === 'contact' ? 'active' : '' %>" href="/contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main class="site-main">
