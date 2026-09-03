@@ -1,0 +1,27 @@
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-intro">
+      <h2>Trinadh Marneni</h2>
+      <p>Full Stack Developer</p>
+    </div>
+    <div class="footer-actions">
+      <a class="footer-email" href="mailto:hello@trinadhmarneni.dev">hello@trinadhmarneni.dev <span>↗</span></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="copyright">© 2026 Trinadh Marneni</p>
+    <div class="footer-menu"><a href="/portfolio">Home</a><a href="/about">About</a><a href="/contact">Contact</a></div>
+  </div>
+</footer>
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  toggle?.addEventListener('click', () => {
+    const isOpen = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen);
+  });
+</script>
+</body>
+
+</html>
